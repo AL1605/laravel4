@@ -131,3 +131,8 @@ Route::get('passVar', function(){
 /*
 การใช้ View::make(String fileName, array) ค่าของ array คือตัวแปรต่างๆ ที่จะส่งให้ View 
 */ 
+
+//การส่งตัวแปรไปที่ View ด้วยการส่ง Method
+Route::get('passVarByMethod', function(){
+	return View::make('passVarByMethod')->with('name', 'Nunim');
+});
