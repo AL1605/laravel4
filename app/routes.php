@@ -136,3 +136,4 @@ Route::get('passVar', function(){
 Route::get('passVarByMethod', function(){
 	return View::make('passVarByMethod')->with('name', 'Nunim');
 });
+
