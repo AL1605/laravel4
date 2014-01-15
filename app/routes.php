@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-//Test laravel4
+//Test laravel PHP Framework
 Route::get('/hello', function(){
 	return  '<h1>Hello World</h1>';
 });
