@@ -115,3 +115,19 @@ Route::get('testView', Function(){
 	return 'test view';
 });
 
+//Test View
+Route::get('testView2', function(){
+	return View::make('testView');
+});
+/*
+return View::make(String fileName) คือ การเชื่อมโยง url จาก Route ไปผูกใส่ไฟล์ที่เป็น View เพื่อให้เราจัดการ
+รูปแบบการแสดงผลด้วย HTML, CSS ได้ตามต้องการ 
+*/
+
+//การส่งตัวแปรไปที่ View ด้วยการส่ง Parameter
+Route::get('passVar', function(){
+	return View::make('passVar', array('name'=>'Noppadol'));
+});
+/*
+การใช้ View::make(String fileName, array) ค่าของ array คือตัวแปรต่างๆ ที่จะส่งให้ View 
+*/ 
