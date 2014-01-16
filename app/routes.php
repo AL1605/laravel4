@@ -159,3 +159,16 @@ Route::get('/exam/showVar', 'ExamController@showVar');
 //ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผล แบบ Method
 Route::get('/exam/showVarWithMethod', 'ExamController@showVarWithMethod');
 
+//การใช้งาน Redirect to
+Route::get('goToDisplay', 'ExamRedirectController@goToDisplay');
+Route::get('display', 'ExamRedirectController@display');
+
+//การใช้งาน Redirect to แบบมี Flash Messge
+Route::get('setText', 'ExamRedirectController@setText');
+Route::get('getText', 'ExamRedirectController@getText');
+
+
+/*
+การดักจับ กรณีไม่มี Method ที่เรียกใช้ (เทคนิคดัก "เกรียน")
+*/
+Route::get('Okay', 'HomeController@okay');
