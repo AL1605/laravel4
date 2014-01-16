@@ -1,0 +1,21 @@
+/*การใช้งาน Form*/
+body{
+	margin: 0;
+	background: snow;
+}
+header{
+	color: snow;
+	background: #FF9F96;
+	border-bottom: 3px double #FF422F;
+	padding: 15px;
+	font-size: 2em;
+	text-align: center;
+}
+.container{
+	margin: 40px;
+}
+#content{
+	background: #FFFFFF;
+	border: 1px solid gray;
+	padding: 20px;
+}

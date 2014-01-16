@@ -199,3 +199,19 @@ Route::get('myInclude', 'MyTemplateController@myInclude');
 
 //การใช้ Comment ใน Template
 Route::get('myComment', 'MyTemplateController@myComment');
+
+
+/*
+Form class
+*/
+
+/*
+Form class นี้ชวยให้เราไม่ต้องเขียนโค้ด html แบบเดิม เพื่อให้โค้ดดูเป็นระบบระเบียบและช่วยให้โค้ดสั้นลง
+*/
+
+/*
+ใช้งาน Form ก็ทำงานงานเหมือนกับ tag form ที่เราใช้กันใน html แต่ต่างกันคือเราจะเรียกใช้ class ของ laravel 
+*/
+
+//การใช้งาน Form
+Route::get('myForm', 'ExamFormController@myForm');
