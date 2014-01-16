@@ -172,3 +172,15 @@ Route::get('getText', 'ExamRedirectController@getText');
 การดักจับ กรณีไม่มี Method ที่เรียกใช้ (เทคนิคดัก "เกรียน")
 */
 Route::get('Okay', 'HomeController@okay');
+
+
+/*
+Template คือ สร้างส่วนที่ควรจะแสดงให้เป็นโครงสร้างหลัก และสิ่งที่จะแสดงต่อมาก็เขียนเฉพาะส่วน 
+*/
+
+/*
+การสร้าง Template เหมือนกับการสร้าง View แต่ Template นี้จะใช้ในทุกๆ หน้าที่เราเรียกใช้ 
+*/
+
+//การเรียกใช้ Template
+Route::get('myTemplate', 'MyTemplateController@index');
