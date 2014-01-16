@@ -136,3 +136,19 @@ Route::get('passVar', function(){
 Route::get('passVarByMethod', function(){
 	return View::make('passVarByMethod')->with('name', 'Nunim');
 });
+
+
+/*
+Controller คือ เป็นส่วนที่มีหน้าที่ควบคุมการทำงานของระบบ หรือเป็นเหนือมตัวกลางในการเชื่อม model และ view 
+*/
+
+//Test Controller
+Route::get('/exam/index', 'ExamController@index');
+/*
+ ** ตรงคำว่า 'ExamController@index' คือ
+ 		* ExamController = ชื่อของ Controller
+ 		* @index = ชื่อของ method ที่เราสร้างมา 
+*/
+
+//ใช้ Controller เรียก View แสดงผล
+Route::get('/exam/myView', 'ExamController@myView');
