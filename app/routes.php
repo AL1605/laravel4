@@ -158,3 +158,4 @@ Route::get('/exam/showVar', 'ExamController@showVar');
 
 //ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผล แบบ Method
 Route::get('/exam/showVarWithMethod', 'ExamController@showVarWithMethod');
+
