@@ -222,3 +222,35 @@ Label เป็นเหมือนการระบุว่า element น�
 
 //Test Label
 Route::get('myLabel', 'ExamFormController@myLabel');
+
+//Test Textfield
+Route::get('myTextfield', 'ExamFormController@myTextfield');
+
+//Test Textarea
+Route::get('myTextarea', 'ExamFormController@myTextarea');
+
+//Test Textpassword
+Route::get('myPassword', 'ExamFormController@myPassword');
+
+//Test Hiddenfield
+Route::get('myHidden', 'ExamFormController@myHidden');
+
+//Test Checkbox
+Route::get('myCheckbox', 'ExamFormController@myCheckbox');
+
+//Test Radiobutton
+Route::get('myRadio', 'ExamFormController@myRadio');
+
+//Test Filefield
+Route::get('myFilefield', 'ExamFormController@myFilefield');
+
+//Test Drop-Down List
+Route::get('myDDL', 'ExamFormController@myDDL');
+
+//Test Button
+Route::get('myButton', 'ExamFormController@myButton');
+
+
+/*
+Request จะยกตัวอย่างง่ายๆ คือ เมื่อมีการกรอกข้อมูลผ่าน form เข้ามา แล้วกดปุ่ม ยืนยัน หลังจากนั้นคือการส่ง request มาที่ server เป็นต้น
+*/
