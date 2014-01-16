@@ -21,6 +21,16 @@ class ExamController extends BaseController{
 	 		* exam = ชื่อ folder
 	 		* myView = ชื่อไฟล์ 
 	*/
+	
+	//ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผลด้วย
+	public function showVar(){
+		return View::make('exam.showVar', array('var'=>'1234'));
+	}
+	
+	//ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผล แบบ Method
+	public function showVarWithMethod(){
+		return View::make('exam.showVarWithMethod')->with('var', 'abc_1234');
+	}
 }
 
 ?>

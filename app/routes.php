@@ -152,3 +152,9 @@ Route::get('/exam/index', 'ExamController@index');
 
 //ใช้ Controller เรียก View แสดงผล
 Route::get('/exam/myView', 'ExamController@myView');
+
+//ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผลด้วย
+Route::get('/exam/showVar', 'ExamController@showVar');
+
+//ใช้ Controller เรียก View แบบมีตัวแปรไปแสดงผล แบบ Method
+Route::get('/exam/showVarWithMethod', 'ExamController@showVarWithMethod');
