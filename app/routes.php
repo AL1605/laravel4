@@ -184,3 +184,18 @@ Template คือ สร้างส่วนที่ควรจะแสด�
 
 //การเรียกใช้ Template
 Route::get('myTemplate', 'MyTemplateController@index');
+
+//การเรียกใช้ ตัวแปรใน Template
+Route::get('myVar', 'MyTemplateController@myVar');
+
+//การใช้เงื่อนไข ใน Template
+Route::get('myCondition', 'MyTemplateController@myCondition');
+
+//การใช้ For ใน Template
+Route::get('myLoop', 'MyTemplateController@myLoop');
+
+//การใช้ Include ใน Template
+Route::get('myInclude', 'MyTemplateController@myInclude');
+
+//การใช้ Comment ใน Template
+Route::get('myComment', 'MyTemplateController@myComment');
