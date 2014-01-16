@@ -5,5 +5,10 @@ class ExamFormController extends BaseController{
 	public function myForm(){
 		return View::make('exam_form.myForm');
 	}
+	
+	//Test Label
+	public function myLabel(){
+		return View::make('exam_form.myLabel');
+	}
 }
 ?>

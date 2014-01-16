@@ -215,3 +215,10 @@ Form class นี้ชวยให้เราไม่ต้องเขีย
 
 //การใช้งาน Form
 Route::get('myForm', 'ExamFormController@myForm');
+
+/*
+Label เป็นเหมือนการระบุว่า element นี้มีหน้าที่อะไร ส่วนมากใช้ร่วมกบ text, textarea และตัวอื่นๆ ที่ถูกเก็บข้อมูลจากผู้ใช้ได้
+*/
+
+//Test Label
+Route::get('myLabel', 'ExamFormController@myLabel');
