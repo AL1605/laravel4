@@ -254,3 +254,44 @@ Route::get('myButton', 'ExamFormController@myButton');
 /*
 Request จะยกตัวอย่างง่ายๆ คือ เมื่อมีการกรอกข้อมูลผ่าน form เข้ามา แล้วกดปุ่ม ยืนยัน หลังจากนั้นคือการส่ง request มาที่ server เป็นต้น
 */
+
+/*
+การใช้งาน Request URL เป็นการเรียก url ที่เราพิมพ์เข้ามา
+*/
+//การใช้งาน Request URL
+Route::get('url', 'ExamRequestController@url');
+
+/*
+การใช้งาน Request path เป็นการแสดง path ที่เราพิมพ์เข้ามา
+*/
+//การใช้งาน Request path
+Route::get('path', 'ExamRequestController@path');
+
+/*
+การใช้งาน Request segment เป็นการดึงข้อมูลจาก url ซึ่งแบ่งเป็นส่วน
+*/
+//การใช้งาน Request segment
+Route::get('segment/p1/p2', 'ExamRequestController@segment');
+
+/*
+การใช้งาน Request server ตัวนี้เปรียบเสมือน ตัวแปร $_SERVER ของ PHP วิธีการก็เหมือนกันคือ ระบุ key ลงไป จึงจะแสดงข้อมูลที่ต้องการออกมา
+*/
+//การใช้งาน Request server
+Route::get('server', 'ExamRequestController@server');
+
+
+/*
+การับค่าผ่าน Input เมื่อมีการส่งค่ามาจาก Form เราก็จะทำการเรียกใช้ค่าเหล่านั้น อาจจะเก็บลงฐานข้อมูลหรือนำมาคำนวณ
+*/
+
+/*
+การใช้งาน input get คือการรับค่ามาแบบระบุชื่อ
+*/
+//การใช้งาน input get
+Route::any('inputGet', 'ExamInputController@inputGet');
+
+/*
+การใช้งาน input all คือการรับค่ามาทั้งหมด
+*/
+//การใช้งาน input all
+Route::any('inputA', 'ExamInputController@inputAll');
