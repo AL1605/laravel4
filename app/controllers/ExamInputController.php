@@ -14,5 +14,19 @@ class ExamInputController extends BaseController{
 		
 		return View::make('exam_input.inputAll')->with('input', $input);
 	}
+	
+	//การใช้งาน input only
+	public function inputOnly(){
+		$input = Input::only('name');
+		
+		return View::make('exam_input.inputOnly')->with('input', $input);
+	}
+	
+	//การใช้งาน input except
+	public function inputExcept(){
+		$input = Input::except('name');
+		
+		return View::make('exam_input.inputExcept')->with('input', $input);
+	}
 }
 ?>

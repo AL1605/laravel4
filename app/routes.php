@@ -294,4 +294,51 @@ Route::any('inputGet', 'ExamInputController@inputGet');
 การใช้งาน input all คือการรับค่ามาทั้งหมด
 */
 //การใช้งาน input all
-Route::any('inputA', 'ExamInputController@inputAll');
+Route::any('inputAll', 'ExamInputController@inputAll');
+
+/*
+การใช้งาน input only เป็นการจำกัดตัวแปรเฉพาะที่กำหนดไว้
+*/
+//การใช้งาน input only
+Route::any('inputOnly', 'ExamInputController@inputOnly');
+
+/*
+การใช้งาน input except เป็นการเมินเฉยหรือไม่สนใจตัวแปรที่ระบุ
+*/
+//การใช้งาน input except
+Route::any('inputExcept', 'ExamInputController@inputExcept');
+
+
+/*
+การใช้งาน Session เป็นตัวแปรที่มีหน้าที่ทำงานไปทุกๆ หน้า ตราบใดที่ยังไม่มีการปิด browser ทิ้ง มันยังจะทำงานอยู่
+*/
+
+/*
+การใช้งาน session put เป็นการกำหนดค่าให้ตัวแปร session 
+*/
+//Test Session put
+Route::get('sessionPut', 'ExamSessionController@sessionPut');
+
+/*
+การใช้งาน session push เป็นการกำหนดค่าให้ตัวแปร session ให้เก็บข้อมูลไปเรื่อยๆ แบบ array
+*/
+//Test Session push
+Route::get('sessionPush', 'ExamSessionController@sessionPush');
+
+/*
+การใช้งาน session all เป็นการดึงข้อมูลมาทั้งหมด
+*/
+//Test Session all
+Route::get('sessionAll', 'ExamSessionController@sessionAll');
+
+/*
+การใช้งาน session forget เป็นการลบข้อมูลตัวแปร session ตาม key
+*/
+//Test Session forget
+Route::get('sessionForget', 'ExamSessionController@sessionForget');
+
+/*
+การใช้งาน session flush เป็นการลบข้อมูลตัวแปร session ทั้งหมด
+*/
+//Test Session flush
+Route::get('sessionFlush', 'ExamSessionController@sessionFlush');
