@@ -342,3 +342,14 @@ Route::get('sessionForget', 'ExamSessionController@sessionForget');
 */
 //Test Session flush
 Route::get('sessionFlush', 'ExamSessionController@sessionFlush');
+
+
+/*
+Cookie จะต่าง session คือต่อให้ปิด browser ไปก็จะไม่โดนทำลาย และระบุระยะเวลาได้ว่าต้องการให้อยู่นานขนาดไหน
+*/
+
+/*
+การใช้งาน cookie forever กำหนดค่าลงตัวแปร cookies
+*/
+//Test cookie forever
+Route::get('cookieForever', 'ExamCookieController@cookieForever');
