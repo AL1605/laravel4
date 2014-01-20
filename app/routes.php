@@ -353,3 +353,10 @@ Cookie จะต่าง session คือต่อให้ปิด browser �
 */
 //Test cookie forever
 Route::get('cookieForever', 'ExamCookieController@cookieForever');
+
+
+/*
+การ Upload อันนี้เป็นขั้นตอนตัวอย่างสำหรับการอัพโหลดไฟล์ 
+*/
+//Test Upload
+Route::any('myUpload', 'ExamUploadController@myUpload');

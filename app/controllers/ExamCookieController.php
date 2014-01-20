@@ -3,9 +3,10 @@ class ExamCookieController extends BaseController{
 	
 	//Test cookie forever
 	public function cookieForever(){
-		Cookie::forever('myCookie', 'This is cookie.');
-		
-		return View::make('exam_cookie.cookieForever');
+		$cookie = Cookie::forever('myCookie', 'This is cookie.');
+		$view = View::make('exam_cookie.cookieForever');
+
+		return Response::make($view)->withCookie($cookie);
 	}
 }
 ?>
