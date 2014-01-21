@@ -6,5 +6,10 @@ class Book extends Eloquent{
 	/*
 	 * สร้างขึ้นเพื่อให้พร้อมใช้งานเพื่อจัดการ SELECT, UPDATE, DELETE, INSERT
 	*/
+	
+	//Test Model
+	public function category(){
+		return $this->belongsTo('Category');
+	}
 }
 ?>
