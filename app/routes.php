@@ -396,3 +396,9 @@ Route::get('testhasMany', function(){
 	
 	return View::make('test_relation.hasMany')->with('model', $model);
 });
+
+/*
+Create การสร้างรายการใหม่ คือ เปรียบเสมือนการ insert หรือ การเพิ่มข้อมูลลงตารางนั่นเอง 
+*/
+//Test Create
+Route::any('create', 'ExamModelController@create');
