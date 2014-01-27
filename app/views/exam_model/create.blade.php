@@ -7,7 +7,7 @@
 {{ Form::open() }}
 
 {{ Form::label('category_id', 'Category') }}
-{{ Form::select('catagory_id', $categoryOption) }}<br />
+{{ Form::select('category_id', $categoryOptions) }}<br />
 
 {{ Form::label('name') }}
 {{ Form::text('name') }}<br />
