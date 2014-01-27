@@ -385,3 +385,14 @@ Route::get('testBelongsTo', function(){
 	
 	return View::make('test_relation.belongsTo')->with('model', $model);
 });
+
+/*
+ การรสร้าง ความสัมพันธ์ HasMany เป็นการเชื่อมโยงข้อมูลในแบบที่เรียกว่า 1:M หรือพูดง่ายๆ คือในหนึ่ง Record มีความเชื่อมโยง
+กับข้อมูลในอีกตารางเป็นจำนวน X Record  
+*/
+//Test HasMany
+Route::get('testhasMany', function(){
+	$model = Category::all();
+	
+	return View::make('test_relation.hasMany')->with('model', $model);
+});
