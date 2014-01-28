@@ -432,3 +432,11 @@ Route::get('myPagination', 'ExamModelController@myPagination');
 */
 //Test DB::select
 Route::get('dbSelect', 'ExamModelController@dbSelect');
+
+
+/*
+Validation คือ การตรวจสอบความถูกต้องของข้อมูล ซึ่งวิธีการคือ ต้องระบุกฏลงไปก่อน แล้วทาง class ของ Validate จะทำการตรวจสอบ
+ถ้าไม่ผ่านด็จะมีข้อความกลับมาแจ้งให้ทราบ 
+*/
+//Test Validation
+Route::any('basicValidate', 'TestValidationController@basicValidate');
