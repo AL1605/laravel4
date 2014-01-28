@@ -59,5 +59,27 @@
 			
 			return Redirect::to('read');
 		}
+		
+		//Test Pagination
+		public function myPagination(){
+			$model = Book::paginate(3);
+			
+			return View::make('exam_model.myPagination')->with('model', $model);
+		}
+		
+		//Test DB::select
+		public function dbSelect(){
+			$sql = "
+					SELECT *, (
+							  	SELECT name
+							  	FROM categories
+							  	WHERE id = books.category_id
+							  ) AS category_name
+					FROM books
+				   ";
+			$data = DB::select($sql);
+			
+			return View::make('exam_model.dbSelect')->with('data', $data);
+		}
 	}
 ?>

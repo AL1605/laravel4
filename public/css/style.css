@@ -19,3 +19,9 @@ header{
 	border: 1px solid gray;
 	padding: 20px;
 }
+
+/*Test Pagination*/
+.pagination li{
+	margin:0 5px 0 5px;
+	display:inline;
+}
