@@ -22,5 +22,35 @@
 				->with('model', $model)
 				->with('categoryOptions', $categoryOptions);
 		}
+		
+		//Test Read
+		public function read(){
+			$model = Book::all();
+			
+			return View::make('exam_model.read')->with('model', $model);
+		}
+		
+		//Test Update
+		public function update($id=null){
+			$model = Book::find($id); // **Book::find($id) คือ การไปดึงรายการที่ต้องการแก้ไขขึ้นมา จะได้มา 1 record
+			
+			$categorySelected = $model->category_id;
+			
+			$categoryOptions = Category::lists('name', 'id');
+			
+			if(Input::all()){
+				$model->category_id = Input::get('category_id');
+				$model->name = Input::get('name');
+				$model->price = Input::get('price');
+				if($model->save()){
+					return Redirect::to('read');
+				}
+			}
+			
+			return View::make('exam_model.update')
+				   ->with('model', $model)
+				   ->with('categoryOptions', $categoryOptions)
+				   ->with('categorySelected', $categorySelected);
+		}
 	}
 ?>
