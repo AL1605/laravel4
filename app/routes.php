@@ -414,3 +414,9 @@ Update การแก้ไข คือ เป็นการเปลี่�
 */
 //Test Update
 Route::any('update/{id}', 'ExamModelController@update');
+
+/*
+Delete การลบ คือ เป็นการลบข้อมูลออกจากตาราง 
+*/
+//Test Delete
+Route::get('delete/{id}', 'ExamModelController@delete');

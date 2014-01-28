@@ -52,5 +52,12 @@
 				   ->with('categoryOptions', $categoryOptions)
 				   ->with('categorySelected', $categorySelected);
 		}
+		
+		//Test Delete
+		public function delete($id){
+			Book::destroy($id);
+			
+			return Redirect::to('read');
+		}
 	}
 ?>
