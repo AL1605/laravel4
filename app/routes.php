@@ -440,3 +440,9 @@ Validation คือ การตรวจสอบความถูกต้�
 */
 //Test Validation
 Route::any('basicValidate', 'TestValidationController@basicValidate');
+
+/*
+การกำหนด rules แบบหลายเงื่อนไข คือ ในกรณีที่ต้องมีหลายเงื่อนไขมากกว่า 1 เงื่อนไข 
+*/
+//Test Rules
+Route::any('manyRules', 'TestValidationController@manyRules');
