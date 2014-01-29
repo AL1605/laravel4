@@ -446,3 +446,9 @@ Route::any('basicValidate', 'TestValidationController@basicValidate');
 */
 //Test Rules
 Route::any('manyRules', 'TestValidationController@manyRules');
+
+/*
+การกำหนดคำของ error messages  
+*/
+//Test error messages
+Route::any('customMessage', 'TestValidationController@customMessage');
