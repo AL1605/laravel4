@@ -452,3 +452,5 @@ Route::any('manyRules', 'TestValidationController@manyRules');
 */
 //Test error messages
 Route::any('customMessage', 'TestValidationController@customMessage');
+
+//Test End
